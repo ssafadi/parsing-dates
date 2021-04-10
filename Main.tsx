@@ -10,10 +10,10 @@ export default function Main(props){
     <label>Enter date to parse</label>
     <input placeholder={dateStr} onChange={(e => setDateStr(e.target.value))} />
     <div>Provided String: {dateStr}</div>
-    <div>Parsed Date {parsed.toString()}</div>
+    <div>Parsed Date: {parsed.toString()}</div>
 
-    <div>Today's Date {today.toString()}</div>
-    <div>Provided Date Has Past: {parsed < today? 'Yes': 'No'}</div>
+    <div>Today's Date: {today.toString()}</div>
+    <div>Provided Date Has Passed: {parsed < today? 'Yes': 'No'}</div>
 
 
     </div>
