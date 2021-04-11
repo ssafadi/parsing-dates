@@ -5,7 +5,7 @@ function add2today({ days = 0, months = 0, years = 0 }) {
     const yyyy = today.getFullYear() + years;
     const mm = today.getMonth() + months;
     const dd = today.getDay() + days;
-    return `${yyyy}-${mm}-${dd}`
+    return `${yyyy}-${mm}-${dd}`;
 }
 
 export default function Main(props){
